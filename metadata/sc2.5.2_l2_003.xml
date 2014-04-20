@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" id="sc2.5.2_l2_003" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd" xmlns="http://bentoweb.org/refs/TCDL1.1">
+<!--
+  Copyright &#169; BenToWeb Consortium 2004-2007
+  
+  Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+  not use this file except in compliance with the License. You may obtain
+  a copy of the License at http://bentoweb.org/refs/LICENSE.html
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+  <formalMetadata>
+    <description>Document containing two fields (first name, last name) that are already filled and set to read-only and 3 text input fields for entering the date. If the date is invalid, suggestions for correction are made (server side detection).</description>
+    <title>Text input fields for the date with suggestions for correction</title>
+    <dc:creator>Daniela.Ortner@jku.at</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+    <date>2005-08-29</date>
+    <status>accepted QA</status>
+  </formalMetadata>
+  <technology>
+    <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+      <label>
+        <html:acronym>XHTML</html:acronym>™ 1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+      <testElements>
+        <testElement>
+          <elementName localname="input" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/html4/interact/forms.html#h-17.4">The INPUT element</specReference>
+        </testElement>
+        <testElement>
+          <elementName localname="label" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/html4/interact/forms.html#h-17.9.1">The LABEL element</specReference>
+        </testElement>
+      </testElements>
+    </recommendation>
+  </technology>
+  <testCase complexity="atomic">
+    <purpose>
+      <p>The document is intended to pass, because suggestions for corrections are provided.</p>
+    </purpose>
+    <requiredTests>
+      <testModes>
+        <testMode>oneExpert</testMode>
+      </testModes>
+    </requiredTests>
+    <files>
+      <file xlink:href="../testfiles/sc2.5.2_l2_003.jsp" hrefLang="en" />
+    </files>
+  </testCase>
+  <rules>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_2.5_minimize-error-suggestions" primary="yes">
+      <locations expectedResult="pass">
+        <location line="83" column="6" xpath="/:html/:body/:form/:div/:label" />
+        <location line="84" column="6" xpath="/:html/:body/:form/:div/:input[1]" />
+        <location line="85" column="6" xpath="/:html/:body/:form/:div/:input[2]" />
+        <location line="86" column="6" xpath="/:html/:body/:form/:div/:input[3]" />
+      </locations>
+      <functionalOutcome>
+        <p>User is provided with suggestions for correcting the error.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>This test case maps to technique G85: Providing a text message when user input falls outside the required format or values (http://www.w3.org/TR/2006/WD-WCAG20-TECHS-20060427/Overview.html#G85).</p>
+      </techComment>
+    </rule>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20050630_2.5_minimize-error-suggestions" primary="no">
+      <locations expectedResult="pass">
+        <location line="83" column="6" xpath="/:html/:body/:form/:div/:label" />
+        <location line="84" column="6" xpath="/:html/:body/:form/:div/:input[1]" />
+        <location line="85" column="6" xpath="/:html/:body/:form/:div/:input[2]" />
+        <location line="86" column="6" xpath="/:html/:body/:form/:div/:input[3]" />
+      </locations>
+      <functionalOutcome>
+        <p>User is provided with suggestions for correcting the error.</p>
+      </functionalOutcome>
+    </rule>
+  </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>

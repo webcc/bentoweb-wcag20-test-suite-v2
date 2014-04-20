@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="BenToWeb_TS_v2" default="validateXMLSchema" basedir=".">
+    
+    <!-- ================================= 
+          Importing libraries
+         ================================= -->
+    <import file="util/ant/tcdl11.lib.xml" />
+
+    <tstamp>
+      <format property="TODAY" pattern="yyyyMMdd" locale="be" />
+    </tstamp>
+
+    <!-- ================================= 
+          Properties
+         ================================= -->
+    <property name="status.file" value="${basedir}/status" />
+    <property name="scenarios.file" value="${basedir}/scenarios.csv" />
+    <property name="scenarios.questions.file" value="${basedir}/questions.csv" />
+    <property name="out.dir" value="${basedir}/out" />
+
+    <!-- ================================= 
+          Validating TCDL files
+         ================================= -->
+	<target name="validateXML">
+		<echo message="Validating XML files with Xerces." />
+		<xmlvalidate classname="org.apache.xerces.parsers.SAXParser"
+			classpath="${lib.dir.apache.xerces}/xercesImpl.jar:${lib.dir.apache.xerces}/xml-apis.jar"
+			failonerror="true">
+			<attribute name="http://apache.org/xml/features/validation/schema" value="true" />
+			<attribute name="http://xml.org/sax/features/namespaces" value="true" />
+			<fileset dir="metadata/" includes="*.xml" />
+		</xmlvalidate>
+	</target>
+
+    <!-- ================================= 
+          Validating TCDL files
+         ================================= -->
+	<target name="validateXMLSchema">
+		<echo message="Validating XML files with Xerces." />
+		<tcdl11.val failonerror="true">
+			<fileset dir="metadata/" includes="*.xml" />
+		</tcdl11.val>
+	</target>
+
+    <!-- ================================= 
+          Classify TCDL files
+         ================================= -->
+	<target name="classifyTCDL">
+		<echo message="Analyzing TCDL files." />
+        <echo file="${status.file}.${TODAY}.csv" append="false"
+            message="Test Case ID|TC Author|Desc of TC|Expected outcome|Status|Test Mode|Scenarios|${line.separator}" />
+        <xslt style="util/xslt/classifyTC.xsl"
+            basedir="metadata/" includes="*.xml" excludes="*99*.xml"
+            destdir="${out.dir}" extension=".txt"
+            filenameparameter="filename" />
+        <fixcrlf srcdir="${out.dir}" eol="lf" fixlast="true" eof="remove" />
+        <concat destfile="${status.file}.${TODAY}.csv" eol="lf" append="true">
+            <fileset dir="out/" includes="*.txt" />
+        </concat>
+	    <delete dir="${out.dir}" />
+	</target>
+
+    <!-- ================================= 
+          Scenarios and disability types
+         ================================= -->
+    <target name="classifyScenariosDisabilityType">
+        <echo message="Classifying scenarios and disability types." />
+        <copy file="util/scenario.header.txt" tofile="${scenarios.file}"
+    		overwrite="true" />
+        <xslt style="util/xslt/classifyScenarios.xsl"
+            basedir="metadata/" includes="*.xml" excludes="*99*.xml"
+            destdir="${out.dir}" extension=".txt"
+            filenameparameter="filename" />
+        <fixcrlf srcdir="${out.dir}" eol="lf" fixlast="true" eof="remove" />
+        <concat destfile="${scenarios.file}" eol="lf" append="true">
+            <fileset dir="out/" includes="*.txt">
+                <size value="1" when="more"/>
+            </fileset>
+        </concat>
+        <delete dir="${out.dir}" />
+    </target>
+
+    <!-- ================================= 
+          Scenarios, disabilities and questions types
+         ================================= -->
+    <target name="classifyScenariosDisabilityQuestionType">
+        <echo message="Classifying scenarios, disabilities and questions types." />
+        <copy file="util/scenario.disability.header.txt"
+            tofile="${scenarios.questions.file}" overwrite="true" />
+        <xslt style="util/xslt/classifyScenariosQuestions.xsl"
+            basedir="metadata/" includes="*.xml" excludes="*99*.xml"
+            destdir="${out.dir}" extension=".txt"
+            filenameparameter="filename" />
+        <fixcrlf srcdir="${out.dir}" eol="lf" fixlast="true" eof="remove" />
+        <concat destfile="${scenarios.questions.file}" eol="lf" append="true">
+            <fileset dir="out/" includes="*.txt">
+                <size value="1" when="more"/>
+            </fileset>
+        </concat>
+        <delete dir="${out.dir}" />
+    </target>
+
+	<target name="correctValidationErrors"
+		depends="correctOptionOther,
+				 removeEmptyAT@product,
+		         removeEmptyUserAgent@product,
+		         correctStatus@pendingbugfix,
+		         correctStatus@acceptedEndUserEval">
+	</target>
+
+	<target name="changeScenarionameAttribute">
+		<replaceregexp flags="g"
+			match="&lt;scenario(.*) scenarioName=&quot;(.*)&quot;(.*)>" 
+		    replace="&lt;scenario\1 name=&quot;\2&quot;\3>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+	<!-- 
+	  This is not a real fix; if optionOther in yesNoOpenQuestion is empty,
+	  shouldn't the optionOther be removed and the yesNoOpenQuestion
+	  changed to yesNoQuestion? This is handled by tcdl1.1_repair_yesnoopen.xslt.
+	-->
+	<target name="correctOptionOther">
+		<replaceregexp flags="g"
+			match="&lt;optionOther xml:lang=&quot;(.*)&quot;\s/>" 
+		    replace="&lt;optionOther xml:lang=&quot;\1&quot;>&lt;p/>&lt;/optionOther>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+	<!-- Also handled by tcdl1.1_repair.xslt. -->
+	<target name="removeEmptyAT@product">
+		<replaceregexp flags="g"
+			match="&lt;AssistiveTechnology(.*) product=&quot;&quot;(.*)/>" 
+		    replace="&lt;AssistiveTechnology\1 \2/>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+	<!-- Also handled by tcdl1.1_repair.xslt. -->
+	<target name="removeEmptyUserAgent@product">
+		<replaceregexp flags="g"
+			match="&lt;UserAgent(.*) product=&quot;&quot;(.*)/>" 
+		    replace="&lt;UserAgent\1 \2/>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+	<target name="correctStatus@pendingbugfix">
+		<replaceregexp flags="g"
+			match="&lt;status>pending bug fix&lt;/status>" 
+		    replace="&lt;status>pending bugfix&lt;/status>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+	<target name="correctStatus@acceptedEndUserEval">
+		<replaceregexp flags="g"
+			match="&lt;status>accepted for end user testing&lt;/status>" 
+		    replace="&lt;status>accepted for end user evaluation&lt;/status>">
+			<fileset dir="metadata/" includes="*.xml" />
+		</replaceregexp>
+	</target>
+
+</project>

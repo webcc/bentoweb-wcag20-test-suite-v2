@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" id="sc3.1.4_l3_012" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1 http://bentoweb.org/refs/schemas/tcdl1.xsd http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd" xmlns="http://bentoweb.org/refs/TCDL1.1">
+  <!--
+ Copyright &#169; BenToWeb Consortium 2004-2007
+
+ Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+ not use this file except in compliance with the License. You may obtain
+ a copy of the License at http://bentoweb.org/refs/LICENSE.html
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  <formalMetadata>
+    <description>A short German text with an abbreviation; the abbreviation is marked up with the <html:code>abbr</html:code> element, but the expansion is not provided (there is no <html:code>title</html:code> attribute); the abbreviation is very well known to people who know German.
+    </description>
+    <title>Abbreviation with missing expansion (German)</title>
+    <dc:creator>Christophe.Strobbe@esat.kuleuven.be</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+    <date>2005-09-01</date>
+    <status>rejected QA</status>
+  </formalMetadata>
+  <technology>
+    <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+      <label>
+        <html:acronym>XHTML</html:acronym>™ 1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+      <testElements>
+        <testElement>
+          <elementName localname="abbr" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/text.html#edef-ABBR">Phrase elements: <html:code>EM</html:code>, <html:code>STRONG</html:code>, <html:code>DFN</html:code>, <html:code>CODE</html:code>, <html:code>SAMP</html:code>, <html:code>KBD</html:code>, <html:code>VAR</html:code>, <html:code>CITE</html:code>, <html:code>ABBR</html:code>, and <html:code>ACRONYM</html:code></specReference>
+        </testElement>
+      </testElements>
+    </recommendation>
+  </technology>
+  <testCase complexity="atomic">
+    <purpose>
+      <p>This test case is intended to fail because the expansion of the abbreviation is not provided. This does not necessarily cause problems for speakers of German, because the abbreviation is very well known.</p>
+    </purpose>
+    <expertGuidance>
+      <p>Check whether an expansion of the abbreviation is provided.</p>
+    </expertGuidance>
+    <requiredTests>
+      <testModes>
+        <testMode>oneExpert</testMode>
+      </testModes>
+      <scenario id="s01" name="Scenario s01">
+        <userGuidance xml:lang="en">
+          <p>If you do this test with a screen reader, you may have to adapt the verbosity settings.</p>
+        </userGuidance>
+        <questions>
+          <yesNoQuestion>
+            <questionText xml:lang="en">
+              <p>Can you find the meaning of the abbreviation in the text?</p>
+            </questionText>
+            <optionYes value="1" />
+            <optionNo value="-1" />
+
+          </yesNoQuestion>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="3" type="screenreader" />
+          <UserAgent minimumLevel="1" type="browser" />
+          <UserAgent minimumLevel="1" version="4" type="browser" product="Microsoft Internet Explorer" />
+          <UserAgent minimumLevel="1" version="5" type="browser" product="Microsoft Internet Explorer" />
+          <UserAgent minimumLevel="1" version="5.5" type="browser" product="Microsoft Internet Explorer" />
+          <UserAgent minimumLevel="1" version="6" type="browser" product="Microsoft Internet Explorer" />
+        </experience>
+      </scenario>
+    </requiredTests>
+    <files>
+      <file xlink:href="../testfiles/sc3.1.4_l3_012.html" hrefLang="de" />
+    </files>
+  </testCase>
+  <rules>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_3.1_meaning-located" primary="yes">
+      <locations expectedResult="fail">
+        <location line="9" column="37" xpath="/:html/:body/:p/:abbr" />
+      </locations>
+      <functionalOutcome>
+        <p>The user cannot find the expanded form of the abbreviation.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>The meaning of the abbreviation <html:abbr>PKW</html:abbr> is very well known, so it is debatable if including the expanded form is necessary.</p>
+      </techComment>
+    </rule>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20050630_3.1_meaning-located" primary="no">
+      <locations expectedResult="cannotTell">
+        <location line="9" column="37" xpath="/:html/:body/:p/:abbr" />
+      </locations>
+      <functionalOutcome>
+        <p>The user cannot find the expanded form of the abbreviation.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>The meaning of the abbreviation <html:abbr>PKW</html:abbr> is very well known, so it is debatable if including the expanded form is necessary.</p>
+      </techComment>
+    </rule>
+  </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>

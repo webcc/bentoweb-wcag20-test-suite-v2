@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" id="sc4.1.1_l1_002" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1 http://bentoweb.org/refs/schemas/tcdl1.xsd http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd" xmlns="http://bentoweb.org/refs/TCDL1.1">
+<!--
+ Copyright &#169; BenToWeb Consortium 2004-2007
+
+ Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+ not use this file except in compliance with the License. You may obtain
+ a copy of the License at http://bentoweb.org/refs/LICENSE.html
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  <formalMetadata>
+    <description>An <html:acronym>XHTML</html:acronym> file that is not well-formed because the elements <html:code>dt</html:code> (for marking up the headword) and <html:code>dd</html:code> (for marking up the definition) overlap while they should follow each other. 
+      This makes the structure ambiguous and might cause problems.
+    </description>
+    <title>Well-formedness error: overlapping elements</title>
+    <dc:creator>Christophe.Strobbe@esat.kuleuven.be</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+    <date>2005-10-05</date>
+    <status>rejected QA</status><!-- @@todo create alternative test case for which it is easier to come up with a question that highligts the potential accessibility issue. -->
+  </formalMetadata>
+  <technology>
+    <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+      <label>
+        <html:acronym>XHTML</html:acronym>™ 1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+      <testElements>
+        <testElement>
+          <elementName localname="dt" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/2002/REC-xhtml1-20020801/#h-4.1">Documents must be well-formed</specReference>
+        </testElement>
+        <testElement>
+          <elementName localname="dd" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/2002/REC-xhtml1-20020801/#h-4.1">Documents must be well-formed</specReference>
+        </testElement>
+      </testElements>
+    </recommendation>
+  </technology>
+  <testCase complexity="atomic">
+    <purpose>
+      <p>This test case is intended to fail because the markup is ambiguous and may cause problems for assistive technologies.
+        (This test case is not about the order of the definitions but about overlapping markup structures.)
+      </p>
+    </purpose>
+    <requiredTests>
+      <testModes>
+        <testMode>oneExpert</testMode>
+      </testModes>
+      <scenario id="s01" name="Scenario s01">
+        <userGuidance xml:lang="en">
+          <p>You will be presented a short definition list with two definitions for the term "abbreviation". The goal of the task is to see whether these defintions are presented to you properly through your assistive technology.</p>
+        </userGuidance>
+        <questions>
+          <multipleChoice select="one" display="horizontal">
+            <questionText xml:lang="en">
+              <p>How many definitions are available for the word abbreviation?</p>
+            </questionText>
+            <choice>
+              <label xml:lang="en">1</label>
+
+
+              <value>-1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">2</label>
+
+
+              <value>1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">3</label>
+
+
+              <value>-2</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">4</label>
+
+
+              <value>-3</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">5</label>
+
+
+              <value>-4</value>
+            </choice>
+          </multipleChoice>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="1" type="screenreader" />
+          <AssistiveTechnology minimumLevel="1" type="Braille display" />
+          <UserAgent minimumLevel="1" type="browser" />
+        </experience>
+        <disabilities>
+          <disability>blindness</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s02" name="Scenario s02">
+        <userGuidance xml:lang="en">
+          <p>You will be presented an explanation of the word "abbreviation" which has 2 sub-numbers. The goal of the task is to see whether it was read to you appropriately.</p>
+        </userGuidance>
+        <questions>
+          <multipleChoice select="one" display="horizontal">
+            <questionText xml:lang="en">
+              <p>How many definitions are available for the word abbreviation?</p>
+            </questionText>
+            <choice>
+              <label xml:lang="en">1</label>
+
+
+              <value>-1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">2</label>
+
+
+              <value>1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">3</label>
+
+
+              <value>-2</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">4</label>
+
+
+              <value>-3</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">5</label>
+
+
+              <value>-4</value>
+            </choice>
+          </multipleChoice>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="1" type="screenreader" />
+          <UserAgent minimumLevel="1" type="browser" />
+        </experience>
+        <disabilities>
+          <disability>blindness</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s03" name="Scenario s03">
+        <userGuidance xml:lang="en">
+          <p>You will be presented an explanation of the word "abbreviation" which has 2 sub-numbers. The goal of the task is to see whether it was read to you appropriately.</p>
+        </userGuidance>
+        <questions>
+          <multipleChoice select="one" display="horizontal">
+            <questionText xml:lang="en">
+              <p>How many definitions are available for the word abbreviation?</p>
+            </questionText>
+            <choice>
+              <label xml:lang="en">1</label>
+
+
+              <value>-1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">2</label>
+
+
+              <value>1</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">3</label>
+
+
+              <value>-2</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">4</label>
+
+
+              <value>-3</value>
+            </choice>
+            <choice>
+              <label xml:lang="en">5</label>
+
+
+              <value>-4</value>
+            </choice>
+          </multipleChoice>
+        </questions>
+        <experience>
+          <UserAgent minimumLevel="1" type="talking browser" />
+        </experience>
+        <disabilities>
+          <disability>dyslexia</disability>
+          <disability>intellectual disability</disability>
+        </disabilities>
+      </scenario>
+    </requiredTests>
+    <files>
+      <file xlink:href="../testfiles/sc4.1.1_l1_002.html" hrefLang="en" />
+    </files>
+  </testCase>
+  <rules>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_4.1_ensure-compat-parses" primary="yes">
+      <locations expectedResult="fail">
+        <location line="10" column="27" xpath="/h:html/h:body/h:dl/h:dt" />
+      </locations>
+      <functionalOutcome>
+        <p>The syntax of the document is not correct; the content may be rendered in an incorrect order.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>The document is not well-formed: the <html:code>dt</html:code> element should be closed before starting the <html:code>dd</html:code> element.
+          See 'Common <html:acronym>HTML</html:acronym> 4.01 validity errors and their effect on accessibility' at http://www.w3.org/2005/Talks/0908-wcag/validity-errors.html and 'Tag Soup: How <html:acronym>UA</html:acronym>s handle &lt;x&gt; &lt;y&gt; &lt;/x&gt; &lt;/y&gt;' at http://ln.hixie.ch/?start=1037910467&amp;count=1.
+        </p>
+        <p>This test case maps to technique H74: Ensuring that all id attribute values are unique for the document AND that the Web unit is well-formed (http://www.w3.org/TR/2006/WD-WCAG20-TECHS-20060427/Overview.html#H74) but fails.</p>
+      </techComment>
+    </rule>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20050211_internal_4.1_use-spec-avoid-spec-no-exception" primary="no">
+      <locations expectedResult="fail">
+        <location line="10" column="27" xpath="/h:html/h:body/h:dl/h:dt" />
+      </locations>
+      <functionalOutcome>
+        <p>The syntax of the document is not correct; the content may be rendered in an incorrect order.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>The document is not well-formed: the <html:code>dt</html:code> element should be closed before starting the <html:code>dd</html:code> element.
+          See 'Common <html:acronym>HTML</html:acronym> 4.01 validity errors and their effect on accessibility' at http://www.w3.org/2005/Talks/0908-wcag/validity-errors.html and 'Tag Soup: How <html:acronym>UA</html:acronym>s handle &lt;x&gt; &lt;y&gt; &lt;/x&gt; &lt;/y&gt;' at http://ln.hixie.ch/?start=1037910467&amp;count=1.
+        </p>
+      </techComment>
+    </rule>
+  </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="h" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>

@@ -1,0 +1,1 @@
+Test Case ID|Scenario ID|Scenario name|has userGuidance|Is translated|blindness|colour vision deficiency|low vision|deafness|hard of hearing|dyslexia|dyscalculus|intellectual disability|dexterity impairment|motor impairment|no disability|learning disability|functional illiteracy|ADHD|aphasia|deaf-blindness|speech impairment

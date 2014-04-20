@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns="http://bentoweb.org/refs/TCDL1.1" xmlns:tcdl="http://bentoweb.org/refs/TCDL1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sc3.2.4_l2_013" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd">
+ 
+<!--
+ Copyright &#169; BenToWeb Consortium 2004-2007
+
+ Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+ not use this file except in compliance with the License. You may obtain
+ a copy of the License at http://bentoweb.org/refs/LICENSE.html
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  <formalMetadata>
+      <description>Two documents, each containing a clickable text.</description>
+      <title>Functional components (onclick) consistently labeled.</title>
+      <dc:creator>johannes.koch@fit.fraunhofer.de</dc:creator>
+      <dc:language>en</dc:language>
+      <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+      <date>2005-08-25</date>
+      <status>rejected QA</status>
+   </formalMetadata>
+   <technology>
+      <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+         <label>
+            <html:acronym>XHTML</html:acronym>&#8482; 1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+         <testElements>
+            <testElement>
+               <elementName localname="span" namespace="http://www.w3.org/1999/xhtml"/>
+               <specReference xlink:href="http://www.w3.org/TR/1999/REC-html401-19991224/interact/scripts.html#adef-onclick"/>
+            </testElement>
+         </testElements>
+      </recommendation>
+   </technology>
+   <testCase complexity="atomic">
+      <purpose>
+         <p>The test is intended to pass because clickable elements are consistently labeled.</p>
+      </purpose>
+      <requiredTests>
+         <testModes>
+            <testMode>automatic</testMode>
+         </testModes>
+      </requiredTests>
+      <files sequential="true">
+         <file xlink:href="../testfiles/sc3.2.4_l2_013.0.html" hrefLang="en"/>
+         <file xlink:href="../testfiles/sc3.2.4_l2_013.html" hrefLang="en"/>
+      </files>
+   </testCase>
+   <rules>
+      <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_3.2_consistent-behavior-consistent-functionality" primary="yes">
+         <locations expectedResult="pass">
+         </locations>
+         <functionalOutcome>
+            <p>Components are labeled consistently.</p>
+         </functionalOutcome>
+         <techComment>
+            <p>The span elements' text contents are the same.</p>
+         </techComment>
+      </rule>
+      <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20050630_3.2_consistent-behavior-consistent-functionality" primary="no">
+         <locations expectedResult="pass">
+         </locations>
+         <functionalOutcome>
+            <p>Components are labeled consistently.</p>
+         </functionalOutcome>
+         <techComment>
+            <p>The span elements' text contents are the same.</p>
+         </techComment>
+      </rule>
+   </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>

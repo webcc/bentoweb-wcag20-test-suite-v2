@@ -1,0 +1,264 @@
+Test Case ID|Scenario ID|Scenario name|has userGuidance|Is translated|blindness|colour vision deficiency|low vision|deafness|hard of hearing|dyslexia|dyscalculus|intellectual disability|dexterity impairment|motor impairment|no disability|learning disability|functional illiteracy|ADHD|aphasia|deaf-blindness|speech impairment
+sc1.1.1_l1_006|s01|Scenario s01 blind1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_006|s02|Scenario s02 dyslexic1|No|Yes|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_006|s03|Scenario s03 lovis1|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_006|s04|Scenario s04 blind braille1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_009|s01|Scenario s01 blind speech1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_009|s02|Scenario s02 sc+ mag1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_009|s03|Scenario s03 blind braille1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s01|Scenario s01 blind speech ie501|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s02|Scenario s02 blind speech ie551|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s03|Scenario s03 blind speech ie601|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s04|Scenario s04 blind braille ie501|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s05|Scenario s05 blind braille ie551|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_011|s06|Scenario s06 blind braille ie601|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s05|Scenario s05 blind speech IE6.01|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s06|Scenario s06 blind braille IE6.01|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_012|s09|Scenario s09 lowvis maf IE6.01|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_013|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_014|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_015|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s06|Scenario s06  blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_016|s09|Scenario s09 lowvis magIE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s01|Scenario s01blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s06|Scenario s06 blind braille IE6.01|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_017|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s05|Scenario s05  blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_018|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_019|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_020|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_021|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s01|Scenario s01 blind speech IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s02|Scenario s02 blind braille IE51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s03|Scenario s03 blind speech IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s04|Scenario s04 blind braille IE5.51|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s05|Scenario s05 blind speech IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s06|Scenario s06 blind braille IE61|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s07|Scenario s07 lowvis mag IE51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s08|Scenario s08 lowvis mag IE5.51|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_022|s09|Scenario s09 lowvis mag IE61|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_026|s01|Scenario s01 blind speech1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_026|s02|Scenario s02 blind braille1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_027|s01|Scenario s01 blind speech IE51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_027|s02|Scenario s02 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_027|s03|Scenario s03 blind speech IE6.01|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_027|s04|Scenario s04 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_028|s01|Scenario s01 blind speech IE51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_028|s02|Scenario s02 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_028|s03|Scenario s03 blind speech IE61|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_028|s04|Scenario s04 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_029|s01|Scenario s01 blind speech IE5.01|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_029|s02|Scenario s02 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_029|s03|Scenario s03 blind speech IE61|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_029|s04|Scenario s04 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_030|s01|Scenario s01 blind speech IE51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_030|s02|Scenario s02 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_030|s03|Scenario s03 blind speech IE61|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_030|s04|Scenario s04 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_031|s01|Scenario s01 blind speech IE51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_031|s02|Scenario s01 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_031|s03|Scenario s01 blind speech IE61|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_031|s04|Scenario s01 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_032|s01|Scenario s01 blind speech IE5.01|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_032|s02|Scenario s02 blind speech IE5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_032|s03|Scenario s03 blind speech IE61|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_032|s04|Scenario s04 blind speech FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.1.1_l1_055|s01|Scenario s011|Yes|Yes|0|0|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.2.2_l1_002|s01|Scenario s01 blind speech1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.2.2_l1_002|s02|Scenario s02 blind braille1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.2.2_l1_002|s03|Scenario s02 lowvis mag1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s01|Scenario s01 blind IE 6.01|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s02|Scenario s02 blind IE 5.51|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s03|Scenario s03 blind IE 5.01|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s04|Scenario s04 blind FF1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s05|Scenario s05 blind Opera1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s06|Scenario s06 motor IE 5.01|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s07|Scenario s07 motor IE 5.51|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s08|Scenario s08 motor IE 6.01|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s09|Scenario s09 motor FF1|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc1.4.2_l2_001|s10|Scenario s10 motor Opera1|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc2.2.1_l1_001|s01|Scenario s011|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.2.1_l1_001|s02|Scenario s021|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.2.1_l1_001|s03|Scenario s031|Yes|Yes|0|0|0|0|1|1|0|1|0|0|0|1|0|1|0|0|0
+sc2.2.1_l1_001|s04|Scenario s041|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.2.1_l1_001|s05|Scenario s051|Yes|Yes|1|0|1|0|0|1|0|1|0|0|0|1|1|1|0|0|0
+sc2.2.1_l1_001|s06|Scenario s061|Yes|Yes|0|0|0|1|1|1|0|1|1|1|0|1|0|1|0|0|0
+sc2.2.1_l1_001|s07|Scenario s071|Yes|Yes|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+sc2.2.1_l1_001|s08|Scenario s081|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.2.1_l1_001|s09|Scenario s091|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.4.1_l1_001|s01|Scenario s011|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_001|s02|Scenario s02 1|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_001|s03|Scenario s031|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.4.1_l1_002|s01|Scenario s011|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_002|s02|Scenario s021|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_002|s03|Scenario s031|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.4.1_l1_003|s01|Scenario s011|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_003|s02|Scenario s021|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0
+sc2.4.1_l1_003|s03|Scenario s031|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s01|Sc1_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s02|Sc2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s03|Sc3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s04|Sc4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s05|Sc5_apha_cvd_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_002|s06|Sc6_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s07|Sc7_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s08|Sc8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.1_l1_002|s09|Sc9_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s10|Sc10_blin(braille_scr)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_002|s11|Sc11_apha_cvd_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_002|s12|Sc11_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.1_l1_016|s01|S1_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s02|S2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s05|S5_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|0|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_016|s06|S6_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s07|S7_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_016|s08|S8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.1_l1_017|s01|S1_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s02|S2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s05|S5_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s06|S6_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_017|s07|S7_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_017|s08|S8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.1_l1_025|s01|S1_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s02|S2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s05|S5_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s06|S6_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_025|s07|S7_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_025|s08|S8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.1_l1_038|s01|S1_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s02|S2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s05|S5_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s06|S6_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.1_l1_038|s07|S7_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.1_l1_038|s08|S8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.4_l3_015|s01|S1_blin_lowv_(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s02|S2_blin(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s05|S5_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s06|S6_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.4_l3_015|s07|S7_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.4_l3_015|s08|S8_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.4_l3_017|s01|S1_blin_lowv_(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s02|S2_blin_(scr_braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s03|S3_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s04|S4_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s05|S5_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s06|S6_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.4_l3_017|s07|S7_apha_adhd_cvd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.4_l3_017|s08|S_apha_dysc_dysl_fill__idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.4_l3_018|s01|sc01_blin_lowv(scr)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_018|s02|s02_blin(Braille)1|Yes|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_018|s03|s03_lowv(magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_018|s04|s04_lowv(scr_magni)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc2.5.4_l3_018|s05|s05_apha_cvd_adhd_deaf_dysc_dysl_fill_hhea_idis_ldis_none1|Yes|Yes|0|1|0|1|1|1|1|1|0|0|1|1|1|1|1|0|0
+sc2.5.4_l3_018|s06|s06_apha_dysc_dysl_fill_idis_ldis(talkbr)1|Yes|Yes|0|0|0|0|0|1|1|1|0|0|0|1|1|0|1|0|0
+sc2.5.4_l3_018|s07|s07_dex_mot(altinp)1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc2.5.4_l3_018|s08|s08_dex_mot1|Yes|Yes|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|0
+sc3.1.1_l1_003|s01|sc01 blind lowv (screenreader)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_003|s02|sc02 lowv (screen reader with magnification)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_003|s03|sc03 AHDH apha dysc dysl fill idis Ldis (talking browser)1|Yes|Yes|0|0|1|0|0|1|1|1|1|1|1|1|1|1|1|0|0
+sc3.1.1_l1_005|s01|sc01 blind lowv (scren reader)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_005|s02|sc02 lowv (screen redaer with magnification)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_005|s03|sc03 ADHD ...to no diss (Talking browser)1|Yes|Yes|0|0|1|0|0|1|1|1|1|1|1|1|1|1|1|0|0
+sc3.1.1_l1_006|s01|sc01 blin lowv (screen reader)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_006|s02|sc02 lowv (screen reader with magnification)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_006|s03|sc03 ADHA apha dysc dysl fill idisLdis (talking browser)1|Yes|Yes|0|0|1|0|0|1|1|1|1|1|1|1|1|1|1|0|0
+sc3.1.1_l1_007|s01|sc01 lowv blin (screen reader)1|Yes|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_007|s02|sc02 lowv (screen reader with magnification)1|Yes|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.1_l1_007|s03|sc03 ADHD... to no dis (talking browser)1|Yes|Yes|0|0|1|0|0|1|1|1|1|1|1|1|1|1|1|0|0
+sc3.1.5_l3_001|s01|Scenario s011|No|Yes|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc3.1.5_l3_003|s01|Scenario s011|No|Yes|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_005|s01|Scenario s01 blind speech1|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_005|s02|Scenario s02 blind braille1|No|Yes|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_005|s03|Scenario s03 lowvis mag1|No|Yes|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_006|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_007|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_008|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_009|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_010|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_011|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_012|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+sc4.1.1_l1_013|s01|Scenario s011|No|Yes|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0

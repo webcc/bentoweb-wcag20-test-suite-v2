@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" id="sc2.4.1_l1_005" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd" xmlns="http://bentoweb.org/refs/TCDL1.1">
+  <!--
+ Copyright &#169; BenToWeb Consortium 2004-2007
+
+ Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+ not use this file except in compliance with the License. You may obtain
+ a copy of the License at http://bentoweb.org/refs/LICENSE.html
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  <formalMetadata>
+    <description>A set of web pages - the web site of the fictitious newspaper The Narnia Times - that has a top navigation section at the top of each page.
+      Each major section of each page - Site Navigation, Today's Picks (on the home page), articles in main content area - have a heading element,
+      so users can navigate from section to section by means of the headings, and thus also skip the top navigation.
+      However, the heading for the top navigation is hidden (moved to the left of the visible areas by means of a negative margin in <html:acronym>CSS</html:acronym>).
+    </description>
+    <title>Set of web pages with heading elements at the beginning of each section of content</title>
+    <dc:creator>Christophe.Strobbe@esat.kuleuven.be</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+    <date>2006-10-11</date>
+    <status>accepted QA</status>
+  </formalMetadata>
+  <technology>
+    <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+      <label>
+        <html:acronym>XHTML</html:acronym>&#8482;1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+      <testElements>
+        <testElement>
+          <elementName localname="h2" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#h-7.5.5">Headings: The <html:code>H1</html:code>, <html:code>H2</html:code>, <html:code>H3</html:code>, <html:code>H4</html:code>, <html:code>H5</html:code>, <html:code>H6</html:code> elements</specReference>
+        </testElement>
+      </testElements>
+    </recommendation>
+    <recommendation xlink:href="http://www.w3.org/TR/1998/REC-CSS2-19980512/">
+      <label>Cascading Style Sheets, level 2 - <html:acronym>CSS2</html:acronym> Specification</label>
+    </recommendation>
+  </technology>
+  <testCase complexity="atomic">
+    <purpose>
+      <p>This test case is intended to pass because the heading elements allow the user to navigate by headings and thus skip the top navigation.
+      </p>
+    </purpose>
+    <requiredTests>
+      <testModes>
+        <testMode>oneExpert</testMode>
+      </testModes>
+    </requiredTests>
+    <files>
+      <file xlink:href="../testfiles/sc2.4.1_l1_005.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_arts.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_dummy.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_business.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_jobs.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_sports.html" hrefLang="en" />
+      <file xlink:href="../testfiles/sc2.4.1_l1_005_world.html" hrefLang="en" />
+    </files>
+  </testCase>
+  <rules>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_2.4_navigation-mechanisms-title" primary="yes">
+      <locations expectedResult="fail">
+        <location xlink:href="../testfiles/sc2.4.1_l1_005.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_arts.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_business.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_dummy.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_jobs.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_sports.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_world.html" line="22" column="6" xpath="/:html/:body//:h2[1]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005.html" line="57" column="3" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_arts.html" line="59" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_business.html" line="60" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_dummy.html" line="62" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_jobs.html" line="59" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_sports.html" line="60" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_world.html" line="59" column="5" xpath="/:html/:body//:h2[2]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005.html" line="77" column="5" xpath="/:html/:body//:h2[3]" />
+        <location xlink:href="../testfiles/sc2.4.1_l1_005_world.html" line="68" column="5" xpath="/:html/:body//:h2[3]" />
+      </locations>
+      <functionalOutcome>
+        <p>Users can bypass the top navigation by navigating the headings. 
+          Opera users can use the <html:kbd>S</html:kbd> and <html:kbd>W</html:kbd> keys to navigate to the next and previous heading, respectively.
+          Firefox users can use a plugin or the 
+          "Heading Navigation Greasemonkey User Script" (http://juicystudio.com/article/heading-navigation-greasemonkey-user-script.php).
+        </p>
+      </functionalOutcome>
+      <techComment>
+        <p>This test case maps to technique H69: Providing Heading elements at the beginning of each section of content (http://www.w3.org/TR/2006/WD-WCAG20-TECHS-20060427/Overview.html#H69).</p>
+      </techComment>
+    </rule>
+  </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>

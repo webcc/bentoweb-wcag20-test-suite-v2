@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testCaseDescription xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" id="sc3.1.3_l3_008" xml:lang="en" xsi:schemaLocation="http://bentoweb.org/refs/TCDL1.1 http://bentoweb.org/refs/schemas/tcdl1.1.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2004/07/xhtml/xhtml1-strict.xsd http://www.w3.org/1999/xlink http://bentoweb.org/refs/schemas/xlink.xsd" xmlns="http://bentoweb.org/refs/TCDL1.1">
+  <!--
+ Copyright &#169; BenToWeb Consortium 2004-2007
+
+ Licensed under the BenToWeb License, Version 1.0 (the "License"); you may
+ not use this file except in compliance with the License. You may obtain
+ a copy of the License at http://bentoweb.org/refs/LICENSE.html
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  <formalMetadata>
+    <description>A document with text in English that contains nautical terms. The <html:code>head</html:code> element contains a <html:code>link</html:code> element that references a glossary where these terms are explained. 
+      Some user agents uses this <html:code>link </html:code> element to generate an additional (navigation) bar that enables the user to access the glossary.
+    </description>
+    <title>Text with nautical terms and with link to external glossary for words used in unusual or restricted way</title>
+    <dc:creator>Christophe.Strobbe@esat.kuleuven.be</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:rights>Copyright BenToWeb 2005-2007</dc:rights>
+    <date>2005-09-01</date>
+    <status>accepted for end user evaluation</status>
+  </formalMetadata>
+  <technology>
+    <recommendation xlink:href="http://www.w3.org/TR/xhtml1/">
+      <label>
+        <html:acronym>XHTML</html:acronym>™ 1.0 The Extensible HyperText Markup Language (Second Edition)</label>
+      <testElements>
+        <testElement>
+          <elementName localname="link" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html#edef-LINK">Document relationships: the <html:code>link</html:code> element</specReference>
+        </testElement>
+        <testElement>
+          <elementName localname="link" namespace="http://www.w3.org/1999/xhtml" />
+          <specReference xlink:href="http://www.w3.org/TR/1999/REC-html401-19991224/types.html#type-links">Link types</specReference>
+        </testElement>
+      </testElements>
+    </recommendation>
+  </technology>
+  <testCase complexity="atomic">
+    <purpose>
+      <p>This test case is intended to pass because there is a link to a glossary for the words that are used in an unusual or restricted way. 
+        However, browser support for the <html:code>link</html:code> element will determine if a user can access the glossary.
+      </p>
+    </purpose>
+    <expertGuidance>
+      <p>Check whether there is a mechanism available for identifying specific definitions of words or phases from nautic jargon used in this test file.</p>
+    </expertGuidance>
+    <requiredTests>
+      <testModes>
+        <testMode>oneExpert</testMode>
+      </testModes>
+      <scenario id="s01" name="Scenario s01">
+        <userGuidance xml:lang="en">
+          <p>A text with nautical jargon is presented to you. Do not worry about understanding the content of the text, because the only goal of this test is to evaluate whether it is easy to find definitions of words. Please read the first paragraph and look in the dictionary for definitions of the words &#8220;cruisers&#8221; and &#8220;destroyers&#8221; one after another. Then read the second paragraph and look in the dictionary for the definition of the word &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <userGuidance xml:lang="nl">
+          <p>Er wordt u een tekst met zeevaartjargon getoond. Maak u geen zorgen over het niet begrijpen van de tekst, de enige bedoeling van deze test is om te evalueren of het gemakkelijk is om definities van woorden te vinden. Lees de eerste paragraaf en zoek in het woordenboek naar de definities van de woorden &#8220;cruisers&#8221; en &#8220;destroyers&#8221;, het ene woord na het andere. Lees dan de tweede paragraaf en zoek in het woordenboek naar de definitie van het woord &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <questions>
+          <likertScale display="horizontal">
+            <questionText xml:lang="en">
+              <p>How easy or difficult was it to find the word definitions?</p>
+            </questionText>
+            <questionText xml:lang="nl">
+              <p>Hoe makkelijk of moeilijk was het om de woorddefinities te vinden ?</p>
+            </questionText>
+            <likertLevel number="1">
+              <label xml:lang="en">Very easy</label>
+
+              <label xml:lang="nl">Zeer makkelijk</label>
+              <value>1</value>
+            </likertLevel>
+            <likertLevel number="2">
+              <label xml:lang="en">Easy</label>
+
+              <label xml:lang="nl">Makkelijk</label>
+              <value>2</value>
+            </likertLevel>
+            <likertLevel number="3">
+              <label xml:lang="en">Neither easy nor difficult</label>
+
+              <label xml:lang="nl">Niet makkelijk maar ook niet moeilijk</label>
+              <value>3</value>
+            </likertLevel>
+            <likertLevel number="4">
+              <label xml:lang="en">Difficult</label>
+
+              <label xml:lang="nl">Moeilijk</label>
+              <value>4</value>
+            </likertLevel>
+            <likertLevel number="5">
+              <label xml:lang="en">Very difficult</label>
+
+              <label xml:lang="nl">Zeer moeilijk</label>
+              <value>5</value>
+            </likertLevel>
+          </likertScale>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="2" type="screenreader" />
+          <UserAgent minimumLevel="4" version="1" type="browser" product="Mozilla" />
+          <UserAgent minimumLevel="4" version="5" type="browser" product="Opera" />
+        </experience>
+        <disabilities>
+          <disability>blindness</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s02" name="Scenario s02">
+        <userGuidance xml:lang="en">
+          <p>A text with nautical jargon is presented to you. Do not worry about understanding the content of the text, because the only goal of this test is to evaluate whether it is easy to find definitions of words. Please read the first paragraph and look in the dictionary for definitions of the words &#8220;cruisers&#8221; and &#8220;destroyers&#8221; one after another. Then read the second paragraph and look in the dictionary for the definition of the word &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <userGuidance xml:lang="nl">
+          <p>Er wordt u een tekst met zeevaartjargon getoond. Maak u geen zorgen over het niet begrijpen van de tekst, de enige bedoeling van deze test is om te evalueren of het gemakkelijk is om definities van woorden te vinden. Lees de eerste paragraaf en zoek in het woordenboek naar de definities van de woorden &#8220;cruisers&#8221; en &#8220;destroyers&#8221;, het ene woord na het andere. Lees dan de tweede paragraaf en zoek in het woordenboek naar de definitie van het woord &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <questions>
+          <likertScale display="horizontal">
+            <questionText xml:lang="en">
+              <p>How easy or difficult was it to find the word definitions?</p>
+            </questionText>
+            <questionText xml:lang="nl">
+              <p>Hoe makkelijk of moeilijk was het om de woorddefinities te vinden ?</p>
+            </questionText>
+            <likertLevel number="1">
+              <label xml:lang="en">Very easy</label>
+
+              <label xml:lang="nl">Zeer makkelijk</label>
+              <value>1</value>
+            </likertLevel>
+            <likertLevel number="2">
+              <label xml:lang="en">Easy</label>
+
+              <label xml:lang="nl">Makkelijk</label>
+              <value>2</value>
+            </likertLevel>
+            <likertLevel number="3">
+              <label xml:lang="en">Neither easy nor difficult</label>
+
+              <label xml:lang="nl">Niet makkelijk maar ook niet moeilijk</label>
+              <value>3</value>
+            </likertLevel>
+            <likertLevel number="4">
+              <label xml:lang="en">Difficult</label>
+
+              <label xml:lang="nl">Moeilijk</label>
+              <value>4</value>
+            </likertLevel>
+            <likertLevel number="5">
+              <label xml:lang="en">Very difficult</label>
+
+              <label xml:lang="nl">Zeer moeilijk</label>
+              <value>5</value>
+            </likertLevel>
+          </likertScale>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="2" type="Braille display" />
+          <AssistiveTechnology minimumLevel="2" type="screenreader" />
+          <UserAgent minimumLevel="2" version="1" type="browser" product="Mozilla" />
+          <UserAgent minimumLevel="2" version="5" type="browser" product="Opera" />
+        </experience>
+        <disabilities>
+          <disability>blindness</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s03" name="Scenario s03">
+        <userGuidance xml:lang="en">
+          <p>A text with nautical jargon is presented to you. Do not worry about understanding the content of the text, because the only goal of this test is to evaluate whether it is easy to find definitions of words. Please read the first paragraph and look in the dictionary for definitions of the words &#8220;cruisers&#8221; and &#8220;destroyers&#8221; one after another. Then read the second paragraph and look in the dictionary for the definition of the word &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <userGuidance xml:lang="nl">
+          <p>Er wordt u een tekst met zeevaartjargon getoond. Maak u geen zorgen over het niet begrijpen van de tekst, de enige bedoeling van deze test is om te evalueren of het gemakkelijk is om definities van woorden te vinden. Lees de eerste paragraaf en zoek in het woordenboek naar de definities van de woorden &#8220;cruisers&#8221; en &#8220;destroyers&#8221;, het ene woord na het andere. Lees dan de tweede paragraaf en zoek in het woordenboek naar de definitie van het woord &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <questions>
+          <likertScale display="horizontal">
+            <questionText xml:lang="en">
+              <p>How easy or difficult was it to find the word definitions?</p>
+            </questionText>
+            <questionText xml:lang="nl">
+              <p>Hoe makkelijk of moeilijk was het om de woorddefinities te vinden ?</p>
+            </questionText>
+            <likertLevel number="1">
+              <label xml:lang="en">Very easy</label>
+
+              <label xml:lang="nl">Zeer makkelijk</label>
+              <value>1</value>
+            </likertLevel>
+            <likertLevel number="2">
+              <label xml:lang="en">Easy</label>
+
+              <label xml:lang="nl">Makkelijk</label>
+              <value>2</value>
+            </likertLevel>
+            <likertLevel number="3">
+              <label xml:lang="en">Neither easy nor difficult</label>
+
+              <label xml:lang="nl">Niet makkelijk maar ook niet moeilijk</label>
+              <value>3</value>
+            </likertLevel>
+            <likertLevel number="4">
+              <label xml:lang="en">Difficult</label>
+
+              <label xml:lang="nl">Moeilijk</label>
+              <value>4</value>
+            </likertLevel>
+            <likertLevel number="5">
+              <label xml:lang="en">Very difficult</label>
+
+              <label xml:lang="nl">Zeer moeilijk</label>
+              <value>5</value>
+            </likertLevel>
+          </likertScale>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="2" type="alternative input devices" />
+          <UserAgent minimumLevel="2" version="1" type="browser" product="Mozilla" />
+          <UserAgent minimumLevel="2" version="5" type="browser" product="Opera" />
+        </experience>
+        <disabilities>
+          <disability>dexterity impairment</disability>
+          <disability>motor impairment</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s04" name="Scenario s04">
+        <userGuidance xml:lang="en">
+          <p>A text with nautical jargon is presented to you. Do not worry about understanding the content of the text, because the only goal of this test is to evaluate whether it is easy to find definitions of words. Please read the first paragraph and look in the dictionary for definitions of the words &#8220;cruisers&#8221; and &#8220;destroyers&#8221; one after another. Then read the second paragraph and look in the dictionary for the definition of the word &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <userGuidance xml:lang="nl">
+          <p>Er wordt u een tekst met zeevaartjargon getoond. Maak u geen zorgen over het niet begrijpen van de tekst, de enige bedoeling van deze test is om te evalueren of het gemakkelijk is om definities van woorden te vinden. Lees de eerste paragraaf en zoek in het woordenboek naar de definities van de woorden &#8220;cruisers&#8221; en &#8220;destroyers&#8221;, het ene woord na het andere. Lees dan de tweede paragraaf en zoek in het woordenboek naar de definitie van het woord &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <questions>
+          <likertScale display="horizontal">
+            <questionText xml:lang="en">
+              <p>How easy or difficult was it to find the word definitions?</p>
+            </questionText>
+            <questionText xml:lang="nl">
+              <p>Hoe makkelijk of moeilijk was het om de woorddefinities te vinden ?</p>
+            </questionText>
+            <likertLevel number="1">
+              <label xml:lang="en">Very easy</label>
+
+              <label xml:lang="nl">Zeer makkelijk</label>
+              <value>1</value>
+            </likertLevel>
+            <likertLevel number="2">
+              <label xml:lang="en">Easy</label>
+
+              <label xml:lang="nl">Makkelijk</label>
+              <value>2</value>
+            </likertLevel>
+            <likertLevel number="3">
+              <label xml:lang="en">Neither easy nor difficult</label>
+
+              <label xml:lang="nl">Niet makkelijk maar ook niet moeilijk</label>
+              <value>3</value>
+            </likertLevel>
+            <likertLevel number="4">
+              <label xml:lang="en">Difficult</label>
+
+              <label xml:lang="nl">Moeilijk</label>
+              <value>4</value>
+            </likertLevel>
+            <likertLevel number="5">
+              <label xml:lang="en">Very difficult</label>
+
+              <label xml:lang="nl">Zeer moeilijk</label>
+              <value>5</value>
+            </likertLevel>
+          </likertScale>
+        </questions>
+        <experience>
+          <AssistiveTechnology minimumLevel="2" type="magnification software" />
+          <UserAgent minimumLevel="2" version="1" type="browser" product="Mozilla" />
+          <UserAgent minimumLevel="2" version="5" type="browser" product="Opera" />
+        </experience>
+        <disabilities>
+          <disability>low vision</disability>
+        </disabilities>
+      </scenario>
+      <scenario id="s05" name="Scenario s05">
+        <userGuidance xml:lang="en">
+          <p>A text with nautical jargon is presented to you. Do not worry about understanding the content of the text, because the only goal of this test is to evaluate whether it is easy to find definitions of words. Please read the first paragraph and look in the dictionary for definitions of the words &#8220;cruisers&#8221; and &#8220;destroyers&#8221; one after another. Then read the second paragraph and look in the dictionary for the definition of the word &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <userGuidance xml:lang="nl">
+          <p>Er wordt u een tekst met zeevaartjargon getoond. Maak u geen zorgen over het niet begrijpen van de tekst, de enige bedoeling van deze test is om te evalueren of het gemakkelijk is om definities van woorden te vinden. Lees de eerste paragraaf en zoek in het woordenboek naar de definities van de woorden &#8220;cruisers&#8221; en &#8220;destroyers&#8221;, het ene woord na het andere. Lees dan de tweede paragraaf en zoek in het woordenboek naar de definitie van het woord &#8220;turrets&#8221;.</p>
+        </userGuidance>
+        <questions>
+          <likertScale display="horizontal">
+            <questionText xml:lang="en">
+              <p>How easy or difficult was it to find the word definitions?</p>
+            </questionText>
+            <questionText xml:lang="nl">
+              <p>Hoe makkelijk of moeilijk was het om de woorddefinities te vinden ?</p>
+            </questionText>
+            <likertLevel number="1">
+              <label xml:lang="en">Very easy</label>
+
+              <label xml:lang="nl">Zeer makkelijk</label>
+              <value>1</value>
+            </likertLevel>
+            <likertLevel number="2">
+              <label xml:lang="en">Easy</label>
+
+              <label xml:lang="nl">Makkelijk</label>
+              <value>2</value>
+            </likertLevel>
+            <likertLevel number="3">
+              <label xml:lang="en">Neither easy nor difficult</label>
+
+              <label xml:lang="nl">Niet makkelijk maar ook niet moeilijk</label>
+              <value>3</value>
+            </likertLevel>
+            <likertLevel number="4">
+              <label xml:lang="en">Difficult</label>
+
+              <label xml:lang="nl">Moeilijik</label>
+              <value>4</value>
+            </likertLevel>
+            <likertLevel number="5">
+              <label xml:lang="en">Very difficult</label>
+
+              <label xml:lang="nl">Zeer moeilijk</label>
+              <value>5</value>
+            </likertLevel>
+          </likertScale>
+        </questions>
+        <experience>
+          <UserAgent minimumLevel="2" version="1" type="browser" product="Mozilla" />
+          <UserAgent minimumLevel="2" version="5" type="browser" product="Opera" />
+        </experience>
+        <disabilities>
+          <disability>dyslexia</disability>
+          <disability>intellectual disability</disability>
+        </disabilities>
+      </scenario>
+    </requiredTests>
+    <files>
+      <file xlink:href="../testfiles/sc3.1.3_l3_008.html" hrefLang="en" />
+    </files>
+  </testCase>
+  <rules>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20060427_3.1_meaning-idioms" primary="yes">
+      <locations expectedResult="cannotTell">
+        <location line="16" column="7" xpath="/:html/:head/:link[@rel='Glossary']/@href" />
+      </locations>
+      <functionalOutcome>
+        <p>The user can find definitions of technical terms.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>Whether the user can find the link to the glossary (defined by the <html:code>link</html:code> element) really depends on the user agent.
+          Mozilla 1.7.3, SeaMonkey, Opera 7.54 and Opera 9.02 support this type of links; Internet Explorer 6.0, 7.O (and earlier versions) and Firefox 2.0 (and earlier versions) don't.
+          (Firefox add-ons MetaTags (https://addons.mozilla.org/firefox/1668/) and
+          cmSiteNavigationToolbar (https://addons.mozilla.org/firefox/1324/) can display this type of links.
+          There is a &lt;Link&gt; toolbar for Internet Explorer 5.0 or higher at http://www.draig.de/LinkBar/index.en.html.)
+        </p>
+        <p>This test case maps to technique H60: Using the link element to link to a glossary (http://www.w3.org/TR/2006/WD-WCAG20-TECHS-20060427/Overview.html#H60).</p>
+      </techComment>
+    </rule>
+    <rule id="http://bentoweb.org/refs/rulesets.xml#WCAG2_20050630_3.1_meaning-idioms" primary="no">
+      <locations expectedResult="cannotTell">
+        <location line="16" column="7" xpath="/:html/:head/:link[@rel='Glossary']/@href" />
+      </locations>
+      <functionalOutcome>
+        <p>The user can find definitions of technical terms.</p>
+      </functionalOutcome>
+      <techComment>
+        <p>Whether the user can find the link to the glossary (defined by the <html:code>link</html:code> element) really depends on the user agent.
+         Mozilla 1.7.3 and Opera 7.54 support this type of links; Internet Explorer 6.0 and Firefox 1.0 and 1.5 don't.
+        </p>
+      </techComment>
+    </rule>
+  </rules>
+  <namespaceMappings>
+    <namespace nsPrefix="" nsURI="http://www.w3.org/1999/xhtml" />
+  </namespaceMappings>
+</testCaseDescription>
